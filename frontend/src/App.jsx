@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Mainroutes from "./routes/Mainroutes";
 import Nav from "./components/Nav";
 import { asyncCurrentUser } from "./store/actions/userAction";
@@ -7,11 +7,16 @@ import { asyncloadProducts } from "./store/actions/productAction";
 
 const App = () => {
   const dispatch = useDispatch();
+  const user = useSelector((state) => state.userReducer.user);
+  const products = useSelector((state) => state.productReducer.products);
 
   useEffect(() => {
-    dispatch(asyncCurrentUser());
-    dispatch(asyncloadProducts());
-  }, []);
+    !user && dispatch(asyncCurrentUser());
+  }, [user]);
+
+  useEffect(() => {
+    products.length == 0 && dispatch(asyncloadProducts());
+  }, [products]);
 
   return (
     <div className="h-[100%] w-[100%]">

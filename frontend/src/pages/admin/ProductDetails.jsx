@@ -48,7 +48,11 @@ const ProductDetails = () => {
       <div className="flex  w-[100%]">
         <div className="w-[30%] p-5 ">
           <h1 className="text-[3rem]">{product.title}</h1>
-          <img className="w-[300px] h-[300px] object-cover" src={product.image} alt="" />
+          <img
+            className="w-[300px] h-[300px] object-cover"
+            src={product.image}
+            alt=""
+          />
           <h1 className="text-[1.2rem]">{product.description}</h1>
           <div className="flex gap-[8vw]">
             <p>{product.price}</p>

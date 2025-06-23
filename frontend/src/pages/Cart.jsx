@@ -30,7 +30,10 @@ const Cart = () => {
   const renderCart =
     user?.cart?.length > 0 ? (
       user.cart.map((c, index) => {
+           console.log(c.product.image);
         return (
+       
+          
           <div key={c.product.id} className="p-2 flex bg-red-200 rounded-xl">
             <div className="flex w-[80%]  p-2 gap-5 rounded">
               <img

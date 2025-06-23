@@ -1,15 +1,18 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import Login from "../pages/Login";
-import Signup from "../pages/Signup";
-import Products from "../pages/Products";
-import CreateProduct from "../pages/admin/CreateProduct";
-import ProductDetails from "../pages/admin/ProductDetails";
-import Cart from "../pages/Cart";
-import PageNotFound from "../pages/PageNotFound";
-import UserProfile from "../pages/user/UserProfile";
-import AuthWrapper from "./AuthWrapper";
+import { lazy } from "react";
 import { useSelector } from "react-redux";
-import PublicOnlyWrapper from "./PublicOnlyWrapper";
+
+const Login = lazy(() => import("../pages/Login"));
+const Signup = lazy(() => import("../pages/Signup"));
+const Products = lazy(() => import("../pages/Products"));
+const CreateProduct = lazy(() => import("../pages/admin/CreateProduct"));
+const ProductDetails = lazy(() => import("../pages/admin/ProductDetails"));
+const Cart = lazy(() => import("../pages/Cart"));
+const PageNotFound = lazy(() => import("../pages/PageNotFound"));
+const UserProfile = lazy(() => import("../pages/user/UserProfile"));
+const AuthWrapper = lazy(() => import("./AuthWrapper"));
+const UnAuthWrapper = lazy(() => import("./UnAuthWrapper"));
+
 
 const Mainroutes = () => {
   const user = useSelector((state) => state.userReducer.user);
@@ -21,18 +24,18 @@ const Mainroutes = () => {
         <Route
           path="/login"
           element={
-            <PublicOnlyWrapper>
+            <UnAuthWrapper>
               <Login />
-            </PublicOnlyWrapper>
+            </UnAuthWrapper>
           }
         />
 
         <Route
           path="/signup"
           element={
-            <PublicOnlyWrapper>
+            <UnAuthWrapper>
               <Signup />
-            </PublicOnlyWrapper>
+            </UnAuthWrapper>
           }
         />
 
