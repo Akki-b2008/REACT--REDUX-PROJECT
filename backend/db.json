@@ -1,37 +1,183 @@
 {
   "products": [
     {
-      "id": "51ADFAADSF25fadsadf52AD51",
-      "title": "jhola",
-      "price": "109",
-      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+      "id": "SyTf_Z6dy0XuD6VnkyIdC",
+      "image": "https://plus.unsplash.com/premium_photo-1675252369719-dd52bc69c3df?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Large burger",
+      "description": "this is very spicy burger for food lovers",
+      "price": "99",
+      "category": "fast food"
     },
     {
-      "id": "szKsk-s9L14rhSR9aVtAa",
-      "image": "https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=",
-      "title": "her eyes are so adorable",
-      "description": "very beautiful",
-      "price": "1000",
-      "category": "precious"
+      "id": "CpJLry5bv6h4p8UJZzUOf",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=962&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Lapinoz Pizza",
+      "description": "very tefjsalddfjsdf gsddfhksdf",
+      "price": "1999",
+      "category": "instant food"
+    },
+    {
+      "id": "-ietP25G72FYGlPkDd8ro",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2R8ZW58MHx8MHx8fDA%3D",
+      "title": "Salad with chat",
+      "description": "healthy chaat with raw vegies",
+      "price": "14",
+      "category": "healthy food"
+    },
+    {
+      "id": "nLAg9ELwJyXCIKNsut0pp",
+      "image": "https://plus.unsplash.com/premium_photo-1670895802114-dc3bc13b5963?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D",
+      "title": "Sweet cookies",
+      "description": "delicious cookies good in taste",
+      "price": "123",
+      "category": "snacks"
+    },
+    {
+      "id": "Ro79Qb4dSQjB5afZLeszj",
+      "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb2R8ZW58MHx8MHx8fDA%3D",
+      "title": "Avacado",
+      "description": "safdjhdfdfhAFDK ADKF",
+      "price": "1221",
+      "category": "fruits"
+    },
+    {
+      "id": "imHJ8uBuWzMAM6vfBiahi",
+      "image": "https://images.unsplash.com/photo-1743630738181-b0e26c76c74c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8",
+      "title": "dfasf",
+      "description": "asdsfsaf",
+      "price": "12",
+      "category": "asdfsa"
     }
   ],
   "users": [
     {
-      "id": "16uprUeluSX78Ra2juAs_",
-      "username": "admin.akash",
-      "email": "akkib@gmail.com",
-      "password": "1234",
-      "isAdmin": true
-    },
-    {
-      "id": "ontOpakBB8hRQ_gHQ4dBV",
+      "id": "4tXhZGLTIlRUSieDcWsI6",
       "username": "ram",
       "email": "ram@gmail.com",
-      "password": "1234",
-      "isAdmin": false
+      "password": "123",
+      "isAdmin": false,
+      "cart": [
+        {},
+        {
+          "product": {
+            "id": "CpJLry5bv6h4p8UJZzUOf",
+            "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=962&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "title": "Lapinoz Pizza",
+            "description": "very tefjsalddfjsdf gsddfhksdf",
+            "price": "1999",
+            "category": "instant food"
+          },
+          "quantity": 3
+        },
+        {
+          "product": {
+            "id": "nLAg9ELwJyXCIKNsut0pp",
+            "image": "https://plus.unsplash.com/premium_photo-1670895802114-dc3bc13b5963?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D",
+            "title": "Sweet cookies",
+            "description": "delicious cookies good in taste",
+            "price": "123",
+            "category": "snacks"
+          },
+          "quantity": 4
+        },
+        {
+          "product": {
+            "id": "-ietP25G72FYGlPkDd8ro",
+            "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2R8ZW58MHx8MHx8fDA%3D",
+            "title": "Salad with chat",
+            "description": "healthy chaat with raw vegies",
+            "price": "149",
+            "category": "healthy food"
+          },
+          "quantity": 6
+        },
+        {
+          "product": {
+            "id": "Ro79Qb4dSQjB5afZLeszj",
+            "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb2R8ZW58MHx8MHx8fDA%3D",
+            "title": "Avacado",
+            "description": "safdjhdfdfhAFDK ADKF",
+            "price": "1221",
+            "category": "fruits"
+          },
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "I-yqYSiIKybfYta76YSl8",
+      "username": "akkib",
+      "email": "akkib@gmail.com",
+      "password": "2008",
+      "isAdmin": true,
+      "cart": [
+        {
+          "product": {
+            "id": "CpJLry5bv6h4p8UJZzUOf",
+            "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=962&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "title": "Lapinoz Pizza",
+            "description": "very tefjsalddfjsdf gsddfhksdf",
+            "price": "1999",
+            "category": "instant food"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "-ietP25G72FYGlPkDd8ro",
+            "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2R8ZW58MHx8MHx8fDA%3D",
+            "title": "Salad with chat",
+            "description": "healthy chaat with raw vegies",
+            "price": "149",
+            "category": "healthy food"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "nLAg9ELwJyXCIKNsut0pp",
+            "image": "https://plus.unsplash.com/premium_photo-1670895802114-dc3bc13b5963?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D",
+            "title": "Sweet cookies",
+            "description": "delicious cookies good in taste",
+            "price": "123",
+            "category": "snacks"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "Ro79Qb4dSQjB5afZLeszj",
+            "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb2R8ZW58MHx8MHx8fDA%3D",
+            "title": "Avacado",
+            "description": "safdjhdfdfhAFDK ADKF",
+            "price": "1221",
+            "category": "fruits"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "imHJ8uBuWzMAM6vfBiahi",
+            "image": "https://images.unsplash.com/photo-1743630738181-b0e26c76c74c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8",
+            "title": "dfasf",
+            "description": "asdsfsaf",
+            "price": "12",
+            "category": "asdfsa"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "SyTf_Z6dy0XuD6VnkyIdC",
+            "image": "https://plus.unsplash.com/premium_photo-1675252369719-dd52bc69c3df?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "title": "Large burger",
+            "description": "this is very spicy burger for food lovers",
+            "price": "99",
+            "category": "fast food"
+          },
+          "quantity": 1
+        }
+      ]
     }
-  ],
-  "carts": []
+  ]
 }

@@ -15,7 +15,6 @@ export const asyncCreateProducts = (product,navigate) => async (dispatch) => {
   try {
     await axios.post("/products", product);
     dispatch(asyncloadProducts());
-    toast.success("product created successfully");
   } catch (error) {
     console.log(error);
   }

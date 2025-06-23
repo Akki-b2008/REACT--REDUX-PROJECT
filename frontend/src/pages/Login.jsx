@@ -5,8 +5,7 @@ import { asyncLoginUser } from "../store/actions/userAction";
 import { useDispatch } from "react-redux";
 
 const Login = () => {
-  const {
-    handleSubmit, reset, register, formState: { errors } } = useForm();
+  const { handleSubmit, reset, register, formState: { errors },} = useForm();
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -14,7 +13,7 @@ const Login = () => {
   const loginSubmit = async (user) => {
     const res = await dispatch(asyncLoginUser(user));
     console.log(res);
-    
+
     reset();
     if (res?.success) {
       navigate("/");

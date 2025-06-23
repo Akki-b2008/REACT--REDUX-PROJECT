@@ -1,13 +1,10 @@
-import { useNavigate } from "react-router-dom";
 import axios from "../../utils/axios";
 import { loaduser, removeuser } from "../reducers/userSlice";
-import { toast } from "react-toastify";
 
 export const asyncCurrentUser = () => async (dispatch, getState) => {
   try {
     const user = JSON.parse(localStorage.getItem("user"));
     if (user) dispatch(loaduser(user));
-    else console.log("user not logged in!");
   } catch (error) {
     console.log("Failed to load user data!");
   }
@@ -16,7 +13,7 @@ export const asyncCurrentUser = () => async (dispatch, getState) => {
 export const asyncLogoutUser = () => async (dispatch, getState) => {
   try {
     localStorage.removeItem("user");
-    dispatch(removeuser())
+    dispatch(removeuser());
   } catch (error) {
     console.log(error);
   }
@@ -25,10 +22,8 @@ export const asyncLogoutUser = () => async (dispatch, getState) => {
 export const asyncRegisterUser = (user) => async (dispatch, getState) => {
   try {
     const { data } = await axios.post("/users", user);
-    toast.success("Registered successfully!");
   } catch (error) {
     console.log(error);
-    // toast.error("Failed to send user data!");
   }
 };
 
@@ -45,6 +40,26 @@ export const asyncLoginUser = (user) => async (dispatch, getState) => {
     } else {
       return { success: false };
     }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const asyncUpdateUser = (id, user) => async (dispatch, getState) => {
+  try {
+    const { data } = await axios.patch("/users/" + id, user);
+    
+    localStorage.setItem("user", JSON.stringify(data));
+    dispatch(asyncCurrentUser());
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const asyncdeleteuser = (id) => async (dispatch, getState) => {
+  try {
+    await axios.delete("/users/" + id);
+    dispatch(asyncLogoutUser());
   } catch (error) {
     console.log(error);
   }

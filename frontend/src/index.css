@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
 *{
-    font-family: "general sans";
+    font-family: "helvetica";
+}
+::-webkit-scrollbar{
+    display: none;
 }

@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Mainroutes from "./routes/Mainroutes";
 import Nav from "./components/Nav";
-import { ToastContainer } from "react-toastify";
 import { asyncCurrentUser } from "./store/actions/userAction";
 import { asyncloadProducts } from "./store/actions/productAction";
 
@@ -18,7 +17,6 @@ const App = () => {
     <div className="h-[100%] w-[100%]">
       <Nav />
       <Mainroutes />
-      <ToastContainer />
     </div>
   );
 };
